@@ -147,8 +147,9 @@ begin
         end
       else
         begin
-//          fs.Position:=aPos2;
-//          MemDataSet.cancel;
+          fs.Position:=aOldPos;
+          MemDataSet.cancel;
+          exit;
         end;
     end;
   fs.Position:=aOldPos;
@@ -167,6 +168,8 @@ var
   aTodo: String;
   mDS: TMemDataset;
   aPos: Int64;
+  Divider : string;
+  cFont: String;
   function BuildBinStr(chr : char;acount : Integer) : string;
   var
     i: Integer;
@@ -174,12 +177,11 @@ var
     SetLength(Result,acount);
     FillChar(Result[1],acount,chr);
   end;
-const
-  Divider = chr($E0)+chr($93)+chr($04)+chr($00);
-
+label Cleanup;
 begin
   result := PChar('');
   aFile := TFileStream.Create(FileToLoad,fmOpenRead);
+  mDS := TMemDataset.Create(nil);
   aVersion := aFile.ReadByte;
   case aVersion of
   21:aTarget := 'Target V14.9';
@@ -190,9 +192,13 @@ begin
   aFile.ReadByte;
   aFont := ReadBinaryString(aFile);
   bFont := ReadBinaryString(aFile);
+  cFont := ReadBinaryString(aFile);
+  SetLength(Divider,4);
+  aFile.ReadByte;
+  aFile.Read(Divider[1],4);
   //Unknown Stuff
   //Block of 78xFF
-  if not SearchToBinString(aFile,BuildBinStr(char($ff),78)) then exit;
+  if not SearchToBinString(aFile,BuildBinStr(char($ff),78)) then goto Cleanup;
   //Signale/Schaltung
     //Scheibar druch Divider getrennt (E0 93 04 00)
   //Komponenten
@@ -203,7 +209,6 @@ begin
     //Font
     //Französisch,English,Deutsch Bauteilwert ??
     //Font
-  mDS := TMemDataset.Create(nil);
   mDS.FieldDefs.Add('BAUTEILNAME',ftString,100);
   mDS.FieldDefs.Add('NAME',ftString,100);
   mDS.FieldDefs.Add('VALUE',ftString,100);
@@ -220,14 +225,18 @@ begin
   mDs.Open;
   aText := FindComponents(aFile,mDS);
   //8xDivider (E0 93 04 00)
-  if not SearchToBinString(aFile,Divider+Divider+Divider+Divider+Divider+Divider+Divider+Divider) then exit;
+  //if not SearchToBinString(aFile,Divider+Divider+Divider+Divider+Divider+Divider+Divider+Divider) then goto Cleanup;
   //Simulation Models
   if not SearchToBinString(aFile,BuildBinStr(char($00),100)) then exit;//100x00
   //Layer List
   if not SearchToBinString(aFile,BuildBinStr(char($00),100)) then exit;//100x00
   //Fonts or other embedded Blob Stuff
   //2xDivider (E0 93 04 00)
-  if not SearchToBinString(aFile,chr($E0)+chr($93)+chr($04)+chr($00)+chr($E0)+chr($93)+chr($04)+chr($00)) then exit;
+  if not SearchToBinString(aFile,Divider) then goto Cleanup;
+  aFile.ReadByte;
+  aFile.ReadByte;
+  aFile.ReadByte;
+  aFile.ReadByte;
   aFile.ReadByte;
   aPos := aFile.Position;
   aVersionInfo := ReadBinaryString(aFile);
@@ -244,6 +253,7 @@ begin
       aText += mDs.FieldByName('NAME').AsString+#19+mDs.FieldByName('VALUE').AsString+LineEnding;
       mDs.Next;
     end;
+Cleanup:
   mDS.Free;
   aFile.Free;
   ResText:=UniToSys(aText);

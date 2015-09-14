@@ -2,180 +2,308 @@
 <CONFIG>
   <ProjectSession>
     <Version Value="9"/>
-    <Units Count="25">
+    <Units Count="27">
       <Unit0>
         <Filename Value="target3001.lpr"/>
         <IsPartOfProject Value="True"/>
-        <UnitName Value="target3001"/>
         <IsVisibleTab Value="True"/>
-        <CursorPos X="14" Y="22"/>
-        <UsageCount Value="43"/>
+        <TopLine Value="220"/>
+        <CursorPos X="27" Y="249"/>
+        <UsageCount Value="53"/>
         <Loaded Value="True"/>
       </Unit0>
       <Unit1>
         <Filename Value="dibimagereader.pas"/>
-        <IsPartOfProject Value="True"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="803"/>
         <CursorPos X="5" Y="822"/>
-        <UsageCount Value="20"/>
+        <UsageCount Value="21"/>
       </Unit1>
       <Unit2>
         <Filename Value="../oofile/wlxplugin.pas"/>
-        <UnitName Value="WLXPlugin"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="71" Y="91"/>
-        <UsageCount Value="22"/>
+        <UsageCount Value="21"/>
       </Unit2>
       <Unit3>
         <Filename Value="../DWGPreview/dwgThumbnail.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="11"/>
       </Unit3>
       <Unit4>
         <Filename Value="../DWGPreview/listplug.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="16"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="12"/>
       </Unit4>
       <Unit5>
         <Filename Value="../DWGPreview/uMain.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="134"/>
         <CursorPos X="43" Y="80"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="12"/>
       </Unit5>
       <Unit6>
         <Filename Value="../../../../../../fpc/trunk/rtl/wince/messages.pp"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="5" Y="11"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit6>
       <Unit7>
         <Filename Value="../FileThumbnails/FileDesc/ContPlug.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="37"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit7>
       <Unit8>
         <Filename Value="../FileThumbnails/FileDesc/DEPHeader.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="94"/>
         <CursorPos X="20"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit8>
       <Unit9>
         <Filename Value="../redhtml/Src/HttpAsyncId10.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="58"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit9>
       <Unit10>
         <Filename Value="../redhtml/Src/HtmlThreads.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="66"/>
-        <UsageCount Value="9"/>
+        <UsageCount Value="8"/>
       </Unit10>
       <Unit11>
         <Filename Value="../TorrentLister/TorrentFile.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="353"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="12"/>
       </Unit11>
       <Unit12>
         <Filename Value="../TorrentLister/install/readme.txt"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="43" Y="14"/>
-        <UsageCount Value="13"/>
+        <UsageCount Value="12"/>
         <DefaultSyntaxHighlighter Value="None"/>
       </Unit12>
       <Unit13>
         <Filename Value="../oofile/calling.inc"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="17" Y="3"/>
-        <UsageCount Value="12"/>
+        <UsageCount Value="11"/>
       </Unit13>
       <Unit14>
         <Filename Value="../TorrentLister/listU.pas"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="19" Y="238"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit14>
       <Unit15>
         <Filename Value="../../components/prichedit/oodocument.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="52"/>
         <CursorPos X="10" Y="118"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit15>
       <Unit16>
         <Filename Value="../../components/prichedit/fprichdocument.pas"/>
         <EditorIndex Value="-1"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit16>
       <Unit17>
         <Filename Value="../../components/prichedit/richdocument.pas"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="24"/>
         <CursorPos X="3" Y="54"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit17>
       <Unit18>
         <Filename Value="dwgPreview.pas"/>
-        <UnitName Value="DwgPreview"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="37" Y="76"/>
-        <UsageCount Value="11"/>
+        <UsageCount Value="10"/>
       </Unit18>
       <Unit19>
         <Filename Value="../../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/fcl-image/src/fpreadbmp.pp"/>
-        <UnitName Value="FPReadBMP"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="177"/>
         <CursorPos X="23" Y="134"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit19>
       <Unit20>
         <Filename Value="../../../../../../../Programme/lazarus/lcl/intfgraphics.pas"/>
-        <UnitName Value="IntfGraphics"/>
         <EditorIndex Value="-1"/>
         <CursorPos X="19" Y="5643"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit20>
       <Unit21>
         <Filename Value="../../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/fcl-image/src/bmpcomn.pp"/>
-        <UnitName Value="BMPcomn"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="59"/>
         <CursorPos X="4" Y="78"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit21>
       <Unit22>
         <Filename Value="../../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/fcl-image/src/fpimage.pp"/>
-        <UnitName Value="FPimage"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="183"/>
         <CursorPos X="3" Y="196"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit22>
       <Unit23>
         <Filename Value="../../../../../../../Programme/lazarus/lcl/graphtype.pp"/>
-        <UnitName Value="GraphType"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="156"/>
         <CursorPos Y="192"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit23>
       <Unit24>
         <Filename Value="../../../../../../../Programme/lazarus/lcl/lcltype.pp"/>
-        <UnitName Value="LCLType"/>
         <EditorIndex Value="-1"/>
         <TopLine Value="1271"/>
         <CursorPos Y="1294"/>
-        <UsageCount Value="10"/>
+        <UsageCount Value="9"/>
       </Unit24>
+      <Unit25>
+        <Filename Value="../../../../../../../Programme/lazarus140/fpc/2.6.4/source/rtl/inc/systemh.inc"/>
+        <EditorIndex Value="2"/>
+        <TopLine Value="603"/>
+        <CursorPos X="10" Y="631"/>
+        <UsageCount Value="12"/>
+        <Loaded Value="True"/>
+      </Unit25>
+      <Unit26>
+        <Filename Value="../../../../../../../Programme/lazarus140/fpc/2.6.4/source/packages/fcl-db/src/memds/memds.pp"/>
+        <UnitName Value="memds"/>
+        <EditorIndex Value="1"/>
+        <TopLine Value="37"/>
+        <UsageCount Value="11"/>
+        <Loaded Value="True"/>
+      </Unit26>
     </Units>
-    <JumpHistory HistoryIndex="-1"/>
+    <JumpHistory Count="30" HistoryIndex="29">
+      <Position1>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="229" Column="17" TopLine="209"/>
+      </Position1>
+      <Position2>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="230" TopLine="209"/>
+      </Position2>
+      <Position3>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="231" TopLine="209"/>
+      </Position3>
+      <Position4>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="69" TopLine="49"/>
+      </Position4>
+      <Position5>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="70" TopLine="49"/>
+      </Position5>
+      <Position6>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="71" TopLine="49"/>
+      </Position6>
+      <Position7>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="72" TopLine="49"/>
+      </Position7>
+      <Position8>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="73" TopLine="49"/>
+      </Position8>
+      <Position9>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="75" TopLine="49"/>
+      </Position9>
+      <Position10>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="76" TopLine="49"/>
+      </Position10>
+      <Position11>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="77" TopLine="49"/>
+      </Position11>
+      <Position12>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="78" TopLine="49"/>
+      </Position12>
+      <Position13>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="232" TopLine="214"/>
+      </Position13>
+      <Position14>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="233" TopLine="214"/>
+      </Position14>
+      <Position15>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="234" TopLine="214"/>
+      </Position15>
+      <Position16>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="235" TopLine="214"/>
+      </Position16>
+      <Position17>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="236" TopLine="214"/>
+      </Position17>
+      <Position18>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="238" TopLine="214"/>
+      </Position18>
+      <Position19>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="239" TopLine="214"/>
+      </Position19>
+      <Position20>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="240" TopLine="214"/>
+      </Position20>
+      <Position21>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="242" TopLine="214"/>
+      </Position21>
+      <Position22>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="243" TopLine="214"/>
+      </Position22>
+      <Position23>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="245" TopLine="214"/>
+      </Position23>
+      <Position24>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="246" TopLine="215"/>
+      </Position24>
+      <Position25>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="247" TopLine="216"/>
+      </Position25>
+      <Position26>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="245" TopLine="216"/>
+      </Position26>
+      <Position27>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="246" TopLine="216"/>
+      </Position27>
+      <Position28>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="247" TopLine="216"/>
+      </Position28>
+      <Position29>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="245" TopLine="217"/>
+      </Position29>
+      <Position30>
+        <Filename Value="target3001.lpr"/>
+        <Caret Line="247" TopLine="217"/>
+      </Position30>
+    </JumpHistory>
   </ProjectSession>
   <Debugging>
     <BreakPoints Count="1">
